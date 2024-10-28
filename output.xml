@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-28T20:01:20.933357" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="E:\tester\Robot\test.robot">
+<test id="s1-t1" name="Log Names and Surnames" line="5">
+<kw name=":FOR">
+<msg time="2024-10-28T20:01:20.970305" level="FAIL">Support for the old FOR loop syntax has been removed. Replace ':FOR' with 'FOR', end the loop with 'END', and remove escaping backslashes.</msg>
+<arg>${i}</arg>
+<arg>IN RANGE</arg>
+<arg>0</arg>
+<arg>${len(${dict.Name})}</arg>
+<status status="FAIL" start="2024-10-28T20:01:20.970256" elapsed="0.000117">Support for the old FOR loop syntax has been removed. Replace ':FOR' with 'FOR', end the loop with 'END', and remove escaping backslashes.</status>
+</kw>
+<kw name="\">
+<arg>Log</arg>
+<arg>Name: ${dict.Name}[${i}], Surname: ${dict.Surname}[${i}]</arg>
+<status status="NOT RUN" start="2024-10-28T20:01:20.970680" elapsed="0.000031"/>
+</kw>
+<status status="FAIL" start="2024-10-28T20:01:20.969303" elapsed="0.001699">Support for the old FOR loop syntax has been removed. Replace ':FOR' with 'FOR', end the loop with 'END', and remove escaping backslashes.</status>
+</test>
+<status status="FAIL" start="2024-10-28T20:01:20.935075" elapsed="0.036796"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

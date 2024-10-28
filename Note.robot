@@ -15,6 +15,22 @@
 
 *** Variables ***
 # สร้างตัวแปร
+# Indentify key word 
+# String        ${string} Hello
+# list          ${list} Name Surname  **แทนจะประกาศ 10 อัน ใช้อันเดียวเรียกข้อมูลทั้งหมด 
+
+# *** Variables ***
+# @{names}    John    Jane    Alex    Mary    Tom
+# @{surnames}    Doe    Smith    Johnson    Brown    Davis
+
+# *** Test Cases ***
+# Example Test
+#     :FOR    ${i}    IN RANGE    0    ${len(${names})}
+#     \    Log    Name: ${names}[${i}] ${surnames}[${i}]
+
+# dictionary           &{dict}        TC1=value    TC2=value        **ชื่อไว้เก็บค่า
+
+
 *** Keywords ***
 # สร้างตัวแปร
 # สร้างมาใช้เอง
