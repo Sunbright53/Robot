@@ -1,1 +1,1 @@
-Thsi is training me for Autumate tester
+This is training me for Automate tester
