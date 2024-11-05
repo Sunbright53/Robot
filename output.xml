@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-28T23:12:13.169512" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="E:\tester\Robot\Test.robot">
-<test id="s1-t1" name="TC-001" line="53">
-<kw name="Test Function 01">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Hello</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-28T23:12:13.202998" elapsed="0.000235"/>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-05T11:33:53.790080" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="E:\Robot\Test.robot">
+<test id="s1-t1" name="Openbrowser" line="64">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-05T11:33:54.007033" level="INFO">Opening browser 'edge' to base url 'https://pet-sitter-app-alpha.vercel.app/'.</msg>
+<arg>https://pet-sitter-app-alpha.vercel.app/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-05T11:33:54.006826" elapsed="3.185711"/>
 </kw>
-<status status="PASS" start="2024-10-28T23:12:13.202521" elapsed="0.000809"/>
-</kw>
-<kw name="Test Function 02">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${inputData}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-28T23:12:13.203734" elapsed="0.000182"/>
-</kw>
-<arg>"สวัสดี"</arg>
-<status status="PASS" start="2024-10-28T23:12:13.203533" elapsed="0.000443"/>
-</kw>
-<status status="PASS" start="2024-10-28T23:12:13.201857" elapsed="0.002264"/>
+<status status="PASS" start="2024-11-05T11:33:54.005935" elapsed="3.187065"/>
 </test>
-<status status="PASS" start="2024-10-28T23:12:13.171057" elapsed="0.033543"/>
+<test id="s1-t2" name="clickfindpet" line="66">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-05T11:33:57.194865" level="INFO">Clicking button 'xpath=/html/body/div[1]/nav/div/div[1]/button[3]'.</msg>
+<arg>xpath=/html/body/div[1]/nav/div/div[1]/button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T11:33:57.194436" elapsed="0.106098"/>
+</kw>
+<status status="PASS" start="2024-11-05T11:33:57.194009" elapsed="0.106918"/>
+</test>
+<status status="PASS" start="2024-11-05T11:33:53.791937" elapsed="3.509936"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>

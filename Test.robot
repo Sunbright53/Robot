@@ -53,3 +53,15 @@
 # TC-001
 #     Test Function 01
 #     Test Function 02    "สวัสดี"
+
+# *** Settings ***
+# Library    SeleniumLibrary
+# *** Variables ***
+
+# *** Keywords ***
+
+# *** Test Cases ***
+# Openbrowser
+#     Open Browser    https://pet-sitter-app-alpha.vercel.app/    edge
+# Clickfindpet
+#     Click Button    xpath=/html/body/div[1]/nav/div/div[1]/button[3]    
