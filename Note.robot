@@ -72,7 +72,9 @@
 
 
 
-*** Test Cases ***
-...    # Keywords เป็น ขั้นตอน
-...    # เขียนชุดคำสั่งให้ Test Cases ทำตาม
+# *** Test Cases ***
+# Keywords เป็น ขั้นตอน
+# เขียนชุดคำสั่งให้ Test Cases ทำตาม
 
+# SeleniumLibrary
+# เก็บคำสั่งไว้รัน

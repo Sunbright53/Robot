@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-05T21:26:29.646007" rpa="false" schemaversion="5">
+<suite id="s1" name="Workshop1" source="E:\Robot\Pbeam\workshop1.robot">
+<test id="s1-t1" name="TC-001:login pass" line="36">
+<kw name="Open web browser">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-05T21:26:29.911155" elapsed="0.000325"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:29.912068" level="INFO">Opening browser 'edge' to base url 'https://automate-test.stpb-digital.com/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-05T21:26:29.911739" elapsed="2.558648"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-05T21:26:32.470729" elapsed="0.360801"/>
+</kw>
+<status status="PASS" start="2024-11-05T21:26:29.909732" elapsed="2.922058"/>
+</kw>
+<kw name="Input data for login page">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-05T21:26:32.832808" elapsed="0.000489"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:32.834371" level="INFO">Typing text 'user.test@krupbeam.com' into text field 'id=email'.</msg>
+<arg>${locator_email}</arg>
+<arg>user.test@krupbeam.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:32.833578" elapsed="1.035142"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:33.869363" level="INFO">Typing text '123456789' into text field 'name=password'.</msg>
+<arg>${locator_password}</arg>
+<arg>123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:33.869077" elapsed="1.027384"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:34.896927" level="INFO">Clicking element 'xpath=//*[@id="btn-login"]'.</msg>
+<arg>${locator_bottonlogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:34.896684" elapsed="0.678669"/>
+</kw>
+<status status="PASS" start="2024-11-05T21:26:32.832343" elapsed="2.743199"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-05T21:26:35.575903" elapsed="2.465327"/>
+</kw>
+<status status="PASS" start="2024-11-05T21:26:29.909034" elapsed="8.132665"/>
+</test>
+<test id="s1-t2" name="TC-002:login fail" line="41">
+<kw name="Open web browser">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-05T21:26:38.043617" elapsed="0.000218"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:38.044205" level="INFO">Opening browser 'edge' to base url 'https://automate-test.stpb-digital.com/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-05T21:26:38.043996" elapsed="2.295827"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-05T21:26:40.340151" elapsed="0.341948"/>
+</kw>
+<status status="PASS" start="2024-11-05T21:26:38.043307" elapsed="2.639015"/>
+</kw>
+<kw name="Input data fail for login page">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-05T21:26:40.683124" elapsed="0.000291"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:40.683821" level="INFO">Typing text 'admin.test@krupbeam.com' into text field 'id=email'.</msg>
+<arg>${locator_email}</arg>
+<arg>admin.test@krupbeam.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:40.683533" elapsed="1.036440"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:41.720532" level="INFO">Typing text '123456789' into text field 'name=password'.</msg>
+<arg>${locator_password}</arg>
+<arg>123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:41.720239" elapsed="1.081105"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:42.801871" level="INFO">Clicking element 'xpath=//*[@id="btn-login"]'.</msg>
+<arg>${locator_bottonlogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:42.801594" elapsed="0.681471"/>
+</kw>
+<status status="PASS" start="2024-11-05T21:26:40.682769" elapsed="2.800455"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:44.110166" level="INFO">${txt} = Email or Password is invalid</msg>
+<var>${txt}</var>
+<arg>${message_email}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:43.483527" elapsed="0.626716"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${txt}</arg>
+<arg>Email or Password is invalid</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-05T21:26:44.110704" elapsed="0.000298"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-05T21:26:44.111241" elapsed="2.455267"/>
+</kw>
+<status status="PASS" start="2024-11-05T21:26:38.042692" elapsed="8.524484"/>
+</test>
+<test id="s1-t3" name="TC-003:login dose not write email and password" line="48">
+<kw name="Open web browser">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-05T21:26:46.570296" elapsed="0.000266"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:46.570977" level="INFO">Opening browser 'edge' to base url 'https://automate-test.stpb-digital.com/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-05T21:26:46.570750" elapsed="2.639098"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-05T21:26:49.210801" elapsed="0.361555"/>
+</kw>
+<status status="PASS" start="2024-11-05T21:26:46.569820" elapsed="3.002725"/>
+</kw>
+<kw name="Only click submit">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-05T21:26:49.573305" elapsed="0.000236"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:49.573870" level="INFO">Clicking element 'xpath=//*[@id="btn-login"]'.</msg>
+<arg>${locator_bottonlogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:49.573668" elapsed="0.675235"/>
+</kw>
+<status status="PASS" start="2024-11-05T21:26:49.572954" elapsed="0.676146"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:50.878202" level="INFO">${txt} = email is a required field</msg>
+<var>${txt}</var>
+<arg>xpath=//*[@id="__next"]/div[1]/div/div/div[2]/div/div/form/div[1]/p</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:50.249497" elapsed="0.628766"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T21:26:51.535753" level="INFO">${txt} = password must be at least 5 characters</msg>
+<var>${txt}</var>
+<arg>xpath=//*[@id="__next"]/div[1]/div/div/div[2]/div/div/form/div[2]/p</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T21:26:50.878803" elapsed="0.657010"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-05T21:26:51.536140" elapsed="2.364836"/>
+</kw>
+<status status="PASS" start="2024-11-05T21:26:46.569187" elapsed="7.332199"/>
+</test>
+<status status="PASS" start="2024-11-05T21:26:29.648028" elapsed="24.254337"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Workshop1">Workshop1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
